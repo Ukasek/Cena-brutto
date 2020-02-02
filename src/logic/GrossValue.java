@@ -8,9 +8,10 @@ class GrossValue {
         Product watch = new Product("Zegarek", "Odmierza czas", 1050, "Akcesoria");
         double accesoryVAT = 0.23;
         double agdVAT = 0.21;
+
         switch (microwave.getCategory()) {
             case "AGD":
-                System.out.println("Cena mikrofalówki z uwzględnieniem podatku VAT (21%): " + (microwave.getPrice() * accesoryVAT + microwave.getPrice()));
+                System.out.println("Cena mikrofalówki z uwzględnieniem podatku VAT (21%): " + (microwave.getPrice() * agdVAT + microwave.getPrice()));
                 break;
             case "Akcesoria":
                 System.out.println(microwave.getName() + "nie należy do kategorii " + microwave.getCategory());
