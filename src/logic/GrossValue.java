@@ -21,7 +21,7 @@ class GrossValue {
                 System.out.println("Cena zegarka z uwzględnieniem podatku VAT (23%): " + (watch.getPrice() * accesoryVAT + watch.getPrice()));
                 break;
             case "AGD":
-                System.out.println("Zegarek nie należy do kategorii AGD");
+                System.out.println(watch.getName() + " nie należy do kategorii " + watch.getCategory());
                 break;
         }
     }
