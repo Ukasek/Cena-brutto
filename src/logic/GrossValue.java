@@ -14,8 +14,10 @@ class GrossValue {
                 System.out.println("Cena mikrofalówki z uwzględnieniem podatku VAT (21%): " + (microwave.getPrice() * agdVAT + microwave.getPrice()));
                 break;
             case "Akcesoria":
-                System.out.println(microwave.getName() + "nie należy do kategorii " + microwave.getCategory());
+                System.out.println(microwave.getName() + " nie należy do kategorii " + microwave.getCategory());
                 break;
+            default:
+                System.out.println("Niepoprawne dane");
         }
         switch (watch.getCategory()) {
             case "Akcesoria":
@@ -24,6 +26,8 @@ class GrossValue {
             case "AGD":
                 System.out.println(watch.getName() + " nie należy do kategorii " + watch.getCategory());
                 break;
+            default:
+                System.out.println("Niepoprawne dane");
         }
     }
 
